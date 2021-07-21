@@ -1,0 +1,8 @@
+---
+IDRAC :
+  - host: 10.56.X.1
+    user: root
+    pass: calvin
+  - host: 10.56.X.2
+    user: root
+    pass: calvin
