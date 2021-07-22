@@ -105,7 +105,7 @@ def check_job_status(args):
     count = 1
     get_job_status_count = 1
     while True:
-        check_idrac_connection()
+        check_idrac_connection(args)
         if count == 10:
             print("- FAIL, 10 attempts at getting job status failed, script will exit")
             sys.exit(0)
@@ -246,7 +246,10 @@ def check_job_status(args):
                 continue
             else:
                 pass
-def check_idrac_connection():
+def check_idrac_connection(args):
+    idrac_ip = args["ip"]
+    idrac_username = args["u"]
+    idrac_password = args["p"]
     run_network_connection_function = ""
     if platform.system().lower() == "windows":
         ping_command = "ping -n 3 %s" % idrac_ip
