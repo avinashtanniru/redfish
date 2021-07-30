@@ -23,12 +23,12 @@
  <Attribute Name="ActiveDirectory.1#DCLookupByUserDomain">Enabled</Attribute> 
  <Attribute Name="ActiveDirectory.1#SSOEnable">Disabled</Attribute> 
  <Attribute Name="ActiveDirectory.1#RSASecurID2FAAD">Disabled</Attribute> 
- <Attribute Name="ADGroup.1#Name">PRC-AXP-AA-E2-AppAdmin-IRCA-Confluent</Attribute> 
+ <Attribute Name="ADGroup.1#Name">PRC-AXP-AA-E2-AppAdmin-IRCA-Idrac</Attribute> 
  <Attribute Name="ADGroup.1#Domain">ads.aexp.com</Attribute> 
  <Attribute Name="ADGroup.1#Privilege">511</Attribute> 
- <Attribute Name="ADGroup.2#Name"></Attribute> 
- <Attribute Name="ADGroup.2#Domain"></Attribute> 
- <Attribute Name="ADGroup.2#Privilege">0</Attribute> 
+ <Attribute Name="ADGroup.2#Name">PRC-AXP-AA-E3-ServiceAuto-idrac-oem</Attribute> 
+ <Attribute Name="ADGroup.2#Domain">ads.aexp.com</Attribute> 
+ <Attribute Name="ADGroup.2#Privilege">499</Attribute> 
  <Attribute Name="ADGroup.3#Name"></Attribute> 
  <Attribute Name="ADGroup.3#Domain"></Attribute> 
  <Attribute Name="ADGroup.3#Privilege">0</Attribute> 
