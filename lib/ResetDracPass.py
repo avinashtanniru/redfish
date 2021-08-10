@@ -27,7 +27,7 @@ from datetime import datetime
 
 # args=vars(parser.parse_args())
 
-args = { 'ip': '', 'u': '', 'p': '', 'id': 2, 'np': '', 'g': 'n'}
+args = { 'ip': '', 'u': '', 'p': '', 'id': 2, 'np': ''}
 
 
 ### Function to get iDRAC user accounts information
@@ -76,6 +76,8 @@ def set_idrac_user_password(args):
     idrac_ip=args["ip"]
     idrac_username=args["u"]
     idrac_password=args["p"]
+    idrac_account_id = args["id"]
+    idrac_new_password = args["np"]
     response = requests.get('https://%s/redfish/v1/Managers/iDRAC.Embedded.1/Accounts/%s' % (idrac_ip, idrac_account_id),verify=False,auth=(idrac_username, idrac_password))
     if response.status_code == 401:
         print("\n- WARNING, status code 401 detected, check iDRAC username / password credentials and privilege level")
@@ -134,11 +136,9 @@ def set_idrac_user_password(args):
     
 ### Run code
 def Run():
-    if args["g"]:
+    if 'g' in args:
         get_iDRAC_user_account_info(args)
     elif args["id"] and args["np"]:
-        idrac_account_id = args["id"]
-        idrac_new_password = args["np"]
         set_idrac_user_password(args)
     else:
         print("\n- FAIL, either missing parameter(s) or invalid parameter value(s) passed in. If needed, review help text for script examples")

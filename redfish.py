@@ -31,7 +31,7 @@ def enableAD(source):
         imp.args['ip'] = x['host']
         imp.args['u'] = x['user']
         imp.args['p'] = x['pass']
-        # imp.Run()
+        imp.Run()
 
 @cli.command('resetPWD', short_help='Reset root password for DELL iDrac.')
 @click.option('-f', '--file', envvar='FILE', default=os.path.join(os.getcwd(), "passwords.csv"),
