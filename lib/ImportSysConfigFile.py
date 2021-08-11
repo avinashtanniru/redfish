@@ -10,7 +10,7 @@
 #
 
 import requests, json, sys, re, time, warnings, argparse, platform, subprocess
-
+import os
 from datetime import datetime
 
 # warnings.filterwarnings("ignore")
@@ -27,8 +27,8 @@ from datetime import datetime
 # parser.add_argument('-e', help='Pass in end HostPowerState value. Supported values are On and Off. If you don\'t use this optional parameter, default value is On', required=False)
 # args=vars(parser.parse_args())
 
-
-args = { 'ip': '', 'u': '', 'p': '', 'f': 'scripts/import.xml', 't': 'IDRAC', 's': 'Graceful', 'e': 'On'}
+xmlpath = os.path.join(os.getcwd() + os.sep + 'scripts' + os.sep, 'import.xml')
+args = { 'ip': '', 'u': '', 'p': '', 'f': xmlpath, 't': 'IDRAC', 's': 'Graceful', 'e': 'On'}
 
 def check_supported_idrac_version(args):
     idrac_ip = args['ip']
