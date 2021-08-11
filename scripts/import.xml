@@ -28,7 +28,7 @@
  <Attribute Name="ADGroup.1#Privilege">511</Attribute> 
  <Attribute Name="ADGroup.2#Name">PRC-AXP-AA-E3-ServiceAuto-idrac-oem</Attribute> 
  <Attribute Name="ADGroup.2#Domain">ads.aexp.com</Attribute> 
- <Attribute Name="ADGroup.2#Privilege">499</Attribute> 
+ <Attribute Name="ADGroup.2#Privilege">511</Attribute> 
  <Attribute Name="ADGroup.3#Name"></Attribute> 
  <Attribute Name="ADGroup.3#Domain"></Attribute> 
  <Attribute Name="ADGroup.3#Privilege">0</Attribute> 
@@ -119,19 +119,19 @@
  <Attribute Name="SysLog.1#PowerLogEnable">Disabled</Attribute> 
  <Attribute Name="SysLog.1#PowerLogInterval">5</Attribute> 
  <Attribute Name="LDAP.1#Enable">Disabled</Attribute> 
- <Attribute Name="LDAP.1#Server">adsldap.aexp.com</Attribute> 
+ <Attribute Name="LDAP.1#Server"></Attribute> 
  <Attribute Name="LDAP.1#Port">636</Attribute> 
- <Attribute Name="LDAP.1#BaseDN">DC=ads,DC=aexp,DC=com</Attribute> 
- <Attribute Name="LDAP.1#UserAttribute">uid</Attribute> 
- <Attribute Name="LDAP.1#GroupAttribute">member</Attribute> 
- <Attribute Name="LDAP.1#GroupAttributeIsDN">Enabled</Attribute> 
- <Attribute Name="LDAP.1#BindDN">CN=svc.irca-cnflnte2-ld,OU=ServiceAccounts,OU=Process,DC=ads,DC=aexp,DC=com</Attribute> 
+ <Attribute Name="LDAP.1#BaseDN"></Attribute> 
+ <Attribute Name="LDAP.1#UserAttribute"></Attribute> 
+ <Attribute Name="LDAP.1#GroupAttribute"></Attribute> 
+ <Attribute Name="LDAP.1#GroupAttributeIsDN">Disabled</Attribute> 
+ <Attribute Name="LDAP.1#BindDN"></Attribute> 
  <!-- <Attribute Name="LDAP.1#BindPassword">******</Attribute>--> 
  <Attribute Name="LDAP.1#SearchFilter"></Attribute> 
  <Attribute Name="LDAP.1#CertValidationEnable">Enabled</Attribute> 
  <Attribute Name="LDAP.1#RSASecurID2FALDAP">Disabled</Attribute> 
- <Attribute Name="LDAPRoleGroup.1#DN">CN=PRC-AXP-AA-E2-AppAdmin-IRCA-Confluent,OU=PRCRole,OU=ISOMgmt,OU=SecurityGroups,OU=Process,DC=ads,DC=aexp,DC=com</Attribute> 
- <Attribute Name="LDAPRoleGroup.1#Privilege">511</Attribute> 
+ <Attribute Name="LDAPRoleGroup.1#DN"></Attribute> 
+ <Attribute Name="LDAPRoleGroup.1#Privilege"></Attribute> 
  <Attribute Name="LDAPRoleGroup.2#DN"></Attribute> 
  <Attribute Name="LDAPRoleGroup.2#Privilege">0</Attribute> 
  <Attribute Name="LDAPRoleGroup.3#DN"></Attribute> 
