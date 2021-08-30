@@ -17,6 +17,8 @@ setup(
     name='refdfish',
     version='1.0',
     py_modules=['redfish'],
+    author='navneeth0053',
+    author_email='navneeth.devops@gmail.com',
     install_requires=reqs,
     entry_points={
         'console_scripts': [
