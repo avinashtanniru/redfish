@@ -16,5 +16,3 @@ This is Project RedFish used to automate DELL hardware.
     ```bash
     pip install --editable .
     ```
-## Authors
-- [Navneeth](https://github.com/navneeth0053)
